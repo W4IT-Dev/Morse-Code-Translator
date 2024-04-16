@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Translator</title>
+
+    <script src="/Scripts/DOM.js" defer></script>
+    <script src="/Scripts/script.js" defer></script>
+    <script src="/Scripts/events.js" defer></script>
+
+    <!-- KaiUI -->
+    <link rel="stylesheet" href="KaiUI/kaios-native-ui.css">
+    <script src="KaiUI/kaios-native-ui.js" defer></script>
+
+    <!-- Translate -->
+    <script src="translation/translate.js" defer></script>
+
+    <!-- morse to text / text to morse -->
+    <script src="translateCodes/translate.js"></script>
+
+
+    <script src="kaiads.v5.min.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="header" data-translate="app_name"></div>
+        <div class="content" id="translator">
+            <div class="textarea-container">
+                <label class="textarea-container__label" data-translate="text"></label>
+                <textarea tabindex="0" id="input" class="textarea-container__textarea focusable"
+                    oninput="translateMorseCode(this.dataset.type, this.value)" data-type="text"
+                    data-translate="input_placeholder"></textarea>
+            </div>
+            <div class="textarea-container">
+                <label class="textarea-container__label" data-translate="morse_code"></label>
+                <textarea tabindex="1" id="output" class="textarea-container__textarea focusable"
+                    data-translate="output_placeholder"></textarea>
+            </div>
+        </div>
+        <div class="softkeys-icon">
+            <div class="softkey softkey-left">left key</div>
+            <div class="softkey softkey-center"><!-- icon --></div>
+            <div class="softkey softkey-right">right key</div>
+        </div>
+    </div>
+</body>
+
+</html>

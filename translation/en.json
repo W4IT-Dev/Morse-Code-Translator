@@ -1,0 +1,7 @@
+{
+    "app_name": "Morse Code Translator",
+    "input_placeholder": "Input",
+    "morse_code": "Morse code",
+    "output_placeholder": "Output",
+    "text": "Text"
+  }

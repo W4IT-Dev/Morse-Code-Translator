@@ -1,0 +1,28 @@
+{
+    "version": "0.0.1",
+    "name": "Morse Code Translator",
+    "description": "Translate morse code to text or text to morse code. Easy and fast.",
+    "type": "web",
+    "launch_path": "/index.html",
+    "icons": {
+        "56": "/icon_56.png",
+        "112": "/icon_112.png"
+    },
+    "developer": {
+        "name": "W4IT Dev",
+        "url": "https://www.github.com/w4it-dev/"
+    },
+    "locales": {
+        "en-US": {
+            "name": "Morse Code Translator",
+            "subtitle": "Simply translate morse code",
+            "description": "Translate morse code to text or text to morse code."
+        },
+        "de-DE": {
+            "name": "Morsecode Übersetzer",
+            "subtitle": "Einfach Morsecode übersetzten",
+            "description": "Übersetze Morsecode zu Text oder Text zu Morsecode"
+        }
+    },
+    "default_locale": "en-US"
+}
